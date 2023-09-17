@@ -16,10 +16,11 @@ const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  /* width: calc(25% - 10px); */
 `;
 
 const Image = styled.img`
-  width: 100%;
+  height: 150px;
   aspect-ratio: 220 / 132;
   object-fit: cover;
   border-radius: 4px;
