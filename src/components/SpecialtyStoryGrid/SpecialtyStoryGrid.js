@@ -47,14 +47,17 @@ const SpecialtyStoryGrid = () => {
 };
 
 const Wrapper = styled.div`
-  display: grid;
-  gap: 48px;
 `;
 
-const MarketsSection = styled.section``;
+const MarketsSection = styled.section`
+  margin-bottom: 48px;
+`;
 
 const MarketCards = styled.div`
-  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
@@ -63,8 +66,7 @@ const MarketCards = styled.div`
 const SportsSection = styled.section``;
 
 const SportsStoriesWrapper = styled.div`
-  max-width: 100vw;
-  display: flex;
+  max-width: 100%;
   overflow-x: scroll;
 `;
 

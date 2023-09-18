@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { QUERIES } from '../../constants';
+import { QUERIES, COLORS } from '../../constants';
 
 import {
   MAIN_STORY,
@@ -70,22 +70,33 @@ const Wrapper = styled.div`
     'advertisement advertisement advertisement'
     'opinion-stories opinion-stories opinion-stories'
     ;
+    gap: 0;
   }
   //laptop size and up styles
 `;
 
 const MainStorySection = styled.section`
   grid-area: main-story;
+  @media (${QUERIES.tabletAndUp}) {
+    padding: 0 16px;
+    border-right: 1px solid ${COLORS.gray[300]};
+  }
 `;
 
 const SecondaryStorySection = styled.section`
   grid-area: secondary-stories;
+  @media (${QUERIES.tabletAndUp}) {
+    padding: 0 16px;
+    & div a:not(:last-of-type) article {
+      border-bottom: 1px solid ${COLORS.gray[300]};
+    }
+    & div a:not(:first-of-type) article {
+      padding-top: 1rem;
+    }
+  }
 `;
 
 const StoryList = styled.div`
-  /* display: flex; */
-  
-  /* flex-direction: column;  */
 `;
 
 

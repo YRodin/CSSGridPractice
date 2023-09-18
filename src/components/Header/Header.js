@@ -45,6 +45,9 @@ const SuperHeader = styled.div`
   padding: 16px 0;
   background: var(--color-gray-900);
   color: white;
+  /* @media(${QUERIES.tabletAndUp}) {
+    height: 56px;
+  } */
   @media (${QUERIES.laptopAndUp}) {
     background-color: ${COLORS.gray[100]};
     padding: 32px 0;
