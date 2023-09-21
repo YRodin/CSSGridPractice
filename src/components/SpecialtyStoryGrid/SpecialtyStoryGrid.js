@@ -89,6 +89,9 @@ const SportsSection = styled.section`
 const SportsStoriesWrapper = styled.div`
   max-width: 100%;
   overflow-x: scroll;
+  & ::-webkit-scrollbar  {
+    display: none;
+  }
 `;
 
 const SportsStories = styled.div`
