@@ -61,6 +61,7 @@ const OpinionSection = styled.section`
         border-bottom: 1px solid ${COLORS.gray[300]};
       }
     }
+  
   }
 `;
 
@@ -121,6 +122,7 @@ const StoryList = styled.div``;
 
 const AdvertisementSection = styled.section`
   grid-area: ad;
+ 
 `;
 
 export default MainStoryGrid;

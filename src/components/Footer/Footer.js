@@ -150,6 +150,9 @@ const TopRow = styled.div`
     justify-content: center;
     gap: 3rem;
   }
+  @media (${QUERIES.desktopAndUp}){
+    justify-content: flex-end;
+  }
 `;
 
 const Social = styled.div`
@@ -178,7 +181,11 @@ const MainNavArea = styled.div`
   text-align: center;
   @media (${QUERIES.tabletAndUp}) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+  @media (${QUERIES.desktopAndUp}){
+    grid-template-columns: repeat(4, 1fr);
   }
 `;
 
@@ -200,12 +207,16 @@ const SubfooterWrapper = styled.div`
   padding: 8px 0px;
   /* Optical alignment */
   padding-bottom: 16px;
+
 `;
 
 const Subfooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media(${QUERIES.desktopAndUp}){
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.a`

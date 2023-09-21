@@ -45,25 +45,24 @@ const SuperHeader = styled.div`
   padding: 16px 0;
   background: var(--color-gray-900);
   color: white;
-  /* @media(${QUERIES.tabletAndUp}) {
-    height: 56px;
-  } */
-  @media (${QUERIES.laptopAndUp}) {
+
+  @media (${QUERIES.desktopAndUp}) {
     background-color: ${COLORS.gray[100]};
     padding: 32px 0;
+    margin-top: 2rem;
   }
 `;
 
 const Row = styled(MaxWidthWrapper)`
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 3.5rem;
 `;
 
 const ActionGroup = styled.div`
   display: flex;
   gap: 24px;
-  @media (${QUERIES.laptopAndUp}) {
+  @media (${QUERIES.desktopAndUp}) {
     color: ${COLORS.offblack};
   }
 
@@ -82,17 +81,17 @@ const MainHeader = styled(MaxWidthWrapper)`
   justify-content: center;
   margin-top: 32px;
   margin-bottom: 48px;
-  @media (${QUERIES.laptopAndUp}) {
-    margin-top: -10%;
+  @media (${QUERIES.desktopAndUp}) {
+    margin-top: clamp(-10%, -7%, 1%);
   }
 `;
 const UserWrapper = styled.div`
-  @media (${QUERIES.laptopAndUp}) {
+  @media (${QUERIES.desktopAndUp}) {
     display: none;
   }
 `;
 const SubscribeGroupWrapper = styled.div`
-  @media (max-width: ${BREAKPOINTS.laptopMin}px) {
+  @media (max-width: ${BREAKPOINTS.desktopMin}px) {
     display: none;
   }
   display: flex;
